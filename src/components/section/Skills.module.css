@@ -1,0 +1,12 @@
+.skills{
+    background-color:#01091CBF ;    
+}
+
+.skills h1{
+    font-size:45px ;
+}
+
+.skills h1, p , ul{
+    
+    padding: 15px;
+}
