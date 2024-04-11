@@ -1,6 +1,6 @@
 import sx from "./Button.module.css";
 
-function Button({text,link}) {
+function Button({text, link}) {
   return (
     <div>
       <a href={link} target="_blank">

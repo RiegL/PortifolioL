@@ -1,9 +1,11 @@
 import sx from "./ButtonB.module.css";
 
-function ButtonB({text}) {
+function ButtonB({ text, link }) {
   return (
     <div>
-      <button className={sx.btn}>{text}</button>
+      <a href={link} target="_blank">
+        <button className={sx.btn}>{text}</button>
+      </a>
     </div>
   );
 }
