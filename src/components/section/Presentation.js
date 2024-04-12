@@ -25,7 +25,7 @@ function Presentation() {
           clearInterval(interval);
         }
       }
-    }, 200);
+    }, 150);
 
     return () => clearInterval(interval);
   }, [text, typingDirection, currentPhraseIndex, phrases]);
