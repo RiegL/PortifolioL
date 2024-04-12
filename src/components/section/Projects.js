@@ -12,10 +12,11 @@ function Projects() {
       <h1>Projetos</h1>
       <div className={sx.cards}>
       <Card
+        site='https://2v-estoque.vercel.app/'
         img={controle}
         title="2V Controle de estoque"
         desc1="REACT, JS, TS, CSS"
-        desc2="Projeto que realiza o controle de estoque em tempo real com o Firebase"
+        desc2="Projeto que realiza o controle de estoque em tempo real com o Firebase (privado)"
         repo="https://github.com/LabHasar/2v-estoque"
       />
       <Card
