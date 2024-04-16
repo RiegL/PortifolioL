@@ -1,10 +1,19 @@
 import sx from './Footer.module.css';
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import dayjs from 'dayjs';
+import { useState, useEffect } from 'react';
 
 function Footer() {
 
-  const currentYear = dayjs().year();
+const [currentTime, setCurrentTime] = useState(dayjs())
+
+useEffect (()=>{
+  const timer = setInterval(() =>{
+    setCurrentTime(dayjs());
+  },1000);
+
+  return () => clearInterval(timer)
+},[])
 
   return (
     <div className={sx.footer}>
@@ -14,7 +23,7 @@ function Footer() {
           <li><a href='https://www.linkedin.com/in/l%C3%A9o-rieg-58b64514a/' target='_blank'><FaLinkedin size={30}/></a></li> 
       </ul>
       <p>leoorieg@gmail.com</p>
-      <p>Léo Rieg © {currentYear}</p>
+      <p>Léo Rieg © {currentTime.format('YYYY')} {currentTime.format('HH:mm:ss')}</p>
     </div>
   );
 }
