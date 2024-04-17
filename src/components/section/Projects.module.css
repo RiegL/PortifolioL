@@ -1,13 +1,12 @@
 .projects{
     text-align: left;
     margin-left: 10%;
-    margin-right:10%;
-
-    
+    margin-right:10%;  
 }
 
 .projects h1{
     font-size: 45px;
+    text-align: center;
 }
 
 .button{
