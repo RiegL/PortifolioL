@@ -5,12 +5,21 @@ import Card from '../elements/Card';
 import weather from '../../images/weatherImg.jpg';
 import page from '../../images/page.jpg';
 import controle from '../../images/2v1.jpg';
+import melipo from '../../images/melipo.png'
 
 function Projects() {
   return (
     <div id="projects" className={sx.projects}>
       <h1>Projetos</h1>
       <div className={sx.cards}>
+      <Card
+        site='https://www.meliponariolenoirrieg.com.br/'
+        img={melipo}
+        title="Meliponário Lenoir Rieg"
+        desc1="JS, HTML, CSS"
+        desc2="Projeto realizado a fins de estudo 100% responsivo, hoje está sendo usado como um site para o trabalho do meu pai de cultivo de abelhas sem ferrão (privado)"
+        repo="https://github.com/RiegL/meliponineos_rieg"
+      />
       <Card
         site='https://2v-estoque.vercel.app/'
         img={controle}
