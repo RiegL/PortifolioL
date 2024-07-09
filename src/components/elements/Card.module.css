@@ -1,48 +1,100 @@
-.card{
+.card {
     display: flex;
+    flex-direction: row;
     margin: 20px;
     gap: 20px;
     align-items: center;
     margin-bottom: 5%;
     justify-content: center;
     padding: 20px;
-}
-
-
-.card img{
-    max-height: 500px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card img {
+    max-height: 300px;
     border-radius: 15px;
-    max-width: 600px;
-}
-
-.card img:hover{
-    transform: translateY(-8px);
+    max-width: 100%;
     transition-duration: 0.5s;
     cursor: pointer;
-}
-
-.card section{
+  }
+  
+  .card img:hover {
+    transform: translateY(-8px);
+  }
+  
+  .cardSection {
     background-color: #01091cbf;
     padding: 2px;
     border-radius: 20px;
     width: 50%;
-    height: 50%;
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0.25, 0.25));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0.25, 0.25));
     padding: 15px;
-}
-
-.card h3{
-    font-size: 30px;
+    display: none; /* Initially hidden */
+  }
+  
+  .show {
+    display: block; /* Show section on hover */
+  }
+  
+  .card h3 {
+    font-size: 24px;
     text-align: center;
-}
-
-.card p{
-    font-size: 20px;
+  }
+  
+  .card p {
+    font-size: 16px;
     text-align: center;
-}
-
-.card a {
+  }
+  
+  .buttonWrapper {
     display: flex;
     justify-content: center;
-    text-decoration: none;
-}
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .card img {
+      max-height: 250px;
+    }
+  
+    .cardSection {
+      width: 100%;
+      display: block; /* Always show section on mobile */
+    }
+  
+    .card h3 {
+      font-size: 20px;
+    }
+  
+    .card p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .card img {
+      max-height: 200px;
+    }
+  
+    .cardSection {
+      width: 100%;
+    }
+  
+    .card h3 {
+      font-size: 18px;
+    }
+  
+    .card p {
+      font-size: 12px;
+    }
+  }
+  

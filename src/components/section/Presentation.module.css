@@ -1,13 +1,57 @@
-.presentation{
+/* Presentation.module.css */
+.presentation {
     text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.presentation h1{
-    font-size:45px ;
-}
-
-.presentation h4{
-    font-size: 20px;
-}
+    margin: 0 10%;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+  }
+  
+  .presentation h1 {
+    font-size: 2.5rem;
+  }
+  
+  .presentation h4 {
+    font-size: 1.25rem;
+  }
+  
+  .presentation p {
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .presentation {
+      margin: 0 5%;
+      width: 100%;
+    }
+  
+    .presentation h1 {
+      font-size: 2rem;
+    }
+  
+    .presentation h4 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .presentation {
+      margin: 0 2%;
+      width: 100%;
+    }
+  
+    .presentation h1 {
+      font-size: 1.5rem;
+    }
+  
+    .presentation h4 {
+      font-size: 0.875rem;
+    }
+  
+    .presentation p {
+      font-size: 0.875rem;
+    }
+  }
+  

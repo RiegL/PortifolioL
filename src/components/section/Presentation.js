@@ -37,18 +37,13 @@ function Presentation() {
       <h4>
         <strong>Bem-vindo ao meu Portfólio</strong>
       </h4>
-      <h1>Olá,eu sou {text}</h1>
+      <h1>Olá, eu sou {text}</h1>
       <p>
         Estou empenhado em progredir na minha jornada profissional por meio de
-        <br />
         estudos diários e desafios constantes. Com experiência em front-end,
-        <br />
         estou determinado a me tornar um desenvolvedor full-stack. Apaixonado
-        <br />
         por tecnologia, estou sempre pronto para aprender e evoluir. Meu
-        <br />
         objetivo é contribuir com soluções inovadoras em projetos de destaque.
-        <br />
       </p>
       <Button
         link="https://www.linkedin.com/in/l%C3%A9o-rieg-58b64514a/"
