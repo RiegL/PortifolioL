@@ -15,10 +15,7 @@ function Card({ title, img, desc1, desc2, site, repo }) {
 
   return (
     <div className={sx.card} onMouseLeave={HidenCard}>
-      <a href={site} target="_blank" onMouseEnter={ShowCard}>
-        <img src={img} alt={title} />
-      </a>
-      <section className={`${sx.cardSection} ${show ? sx.show : ''}`}>
+      <section className={`${sx.cardSection} ${show ? sx.show : ""}`}>
         <h3>Projeto {title}</h3>
         <p>
           <strong>Tecnologias: </strong>
@@ -29,6 +26,9 @@ function Card({ title, img, desc1, desc2, site, repo }) {
           <ButtonB text="Acesse o Repositório" link={repo} />
         </div>
       </section>
+      <a href={site} target="_blank" onMouseEnter={ShowCard}>
+        <img src={img} alt={title} />
+      </a>
     </div>
   );
 }
