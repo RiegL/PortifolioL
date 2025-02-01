@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import './App.css';
@@ -7,6 +8,7 @@ import Presentation from './components/section/Presentation';
 import Skills from './components/section/Skills';
 import Projects from './components/section/Projects';
 import Footer from './components/section/Footer';
+import Projetos from './pages/Projetos'; 
 
 function App() {
   const [init, setInit] = useState(false);
@@ -18,12 +20,9 @@ function App() {
       setInit(true);
     });
   }, []);
-  
 
   const options = useMemo(() => ({
-    background: {
-      color: { value: "#0d47a1" },
-    },
+    background: { color: { value: "#0d47a1" } },
     fpsLimit: 120,
     interactivity: {
       events: {
@@ -37,19 +36,8 @@ function App() {
     },
     particles: {
       color: { value: "#f5f5f5" },
-      links: {
-        color: "#f5f5f5",
-        distance:150,
-        enable: true,
-        opacity: 0.5,
-        width: 1,
-      },
-      move: {
-        direction: "none",
-        enable: true,
-        outModes: { default: "bounce" },
-        speed: 3,
-      },
+      links: { color: "#f5f5f5", distance: 150, enable: true, opacity: 0.5, width: 1 },
+      move: { direction: "none", enable: true, outModes: { default: "bounce" }, speed: 3 },
       number: { value: 80 },
       opacity: { value: 0.4 },
       shape: { type: "circle" },
@@ -59,14 +47,23 @@ function App() {
   }), []);
 
   return (
-    <div className="App">
-      {init && <Particles id="tsparticles" options={options}   />}
-      <Navbar />
-      <Presentation />
-      <Skills />
-      <Projects />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        {init && <Particles id="tsparticles" options={options} />}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Navbar />
+              <Presentation />
+              <Skills />
+              <Projects />
+              <Footer />
+            </>
+          } />
+          <Route path="/projetos" element={<Projetos />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
