@@ -39,11 +39,11 @@ function Presentation() {
       </h4>
       <h1>Olá, eu sou {text}</h1>
       <p>
-        Estou empenhado em progredir na minha jornada profissional por meio de
-        estudos diários e desafios constantes. Com experiência em front-end,
-        estou determinado a me tornar um desenvolvedor full-stack. Apaixonado
-        por tecnologia, estou sempre pronto para aprender e evoluir. Meu
-        objetivo é contribuir com soluções inovadoras em projetos de destaque.
+        🚀 Desenvolvedor | Focado em Crescimento e Inovação<br/>
+         Olá! Sou um desenvolvedor dedicado com experiência em JavaScript, HTML, CSS, ReactNative,
+        ReactJS e NextJS, além de conhecimentos em bancos de dados como MySQL e
+        PostgreSQL. Estou constantemente em busca de desafios e oportunidades
+        para evoluir minhas habilidades, tanto em front-end quanto em back-end.
       </p>
       <Button
         link="https://www.linkedin.com/in/l%C3%A9o-rieg-58b64514a/"

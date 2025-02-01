@@ -7,6 +7,7 @@ import page from "../../images/page.jpg";
 import controle from "../../images/2v1.jpg";
 import melipo from "../../images/melipo.png";
 import printer from "../../images/dashboard.png";
+import equipcare from "../../images/equipcare.png";
 
 function Projects() {
   return (
@@ -20,6 +21,14 @@ function Projects() {
           desc1="JavaScript, HTML, CSS"
           desc2="Website responsivo criado como parte de estudos e atualmente usado pelo meu pai para promover o trabalho com abelhas sem ferrão. Focado em exibir informações de forma clara e acessível. (privado)"
           repo="https://github.com/RiegL/meliponineos_rieg"
+        />
+        <Card
+          site="https://equipacare-cme.vercel.app/"
+          img={equipcare}
+          title="Equipacare CME"
+          desc1="NextJs, TS, TailwindCSS, MySQL, NodeJS, ExpressJS "
+          desc2="A ferramenta foi desenvolvida com o objetivo de proporcionar uma solução digital para dimensionar equipamentos de esterilização em hospitais, apresentando cálculos precisos, recomendações de marcas, e captando leads qualificados para a Equipacare."
+          repo="https://github.com/rodrigmeira/Equipacare-CME"
         />
         <Card
           img={printer}
